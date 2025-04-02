@@ -381,7 +381,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -397,6 +399,19 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#challenge-of-data-access">1. <strong>Challenge of Data Access</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#challenge-of-integrative-infrastructure">2. <strong>Challenge of Integrative Infrastructure</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#challenge-of-inefficiency-and-the-need-for-automation">3. <strong>Challenge of Inefficiency and the Need for Automation</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#challenge-of-missingness-and-interpretive-gaps">4. <strong>Challenge of Missingness and Interpretive Gaps</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#challenge-of-demographic-shift-and-clinical-blind-spots">5. <strong>Challenge of Demographic Shift and Clinical Blind Spots</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#summary">Summary</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -478,7 +493,51 @@ document.write(`
     <i>The demographic shift toward older kidney donors necessitates improved characterization of risks to enhance consent processes and outcomes.</i><br>
     — <a href="https://www.nytimes.com/2025/02/27/books/review/meltdown-duncan-mavin.html" target="_blank" style="text-decoration: none; font-style: normal;">SRTR</a>
 </blockquote> 
-<p>The number of older adults (≥50 years) undergoing live donor nephrectomy has quadrupled over the last two decades, a trend expected to persist given demographic shifts, updates in kidney transplant allocation, and changes to Kidney Disease: Improving Global Outcomes (KDIGO) guidelines. Despite this increase, critical knowledge gaps persist in understanding how older donors cope with the physical stress of nephrectomy, particularly the role of age-related kidney changes (glomerular senescence) and the body’s ability to adapt following a 50% nephron mass loss. Approximately 80% of older donors experience a post-donation GFR &lt;60 ml/min/1.73m², meeting the definition of chronic kidney disease (CKD), placing them at increased risk of frailty and hospitalization as they progress toward CKD. However, no studies have identified clinical signatures of resiliency in this unique population, even as nephrectomy directly impacts their renal system and overall health.</p>
+<p>In my April 2nd talk, I framed the discussion around five nested layers—<strong>tactical</strong>, <strong>informational</strong>, <strong>strategic</strong>, <strong>operational</strong>, and <strong>existential</strong>—to situate my thesis within a broader clinical, ethical, and epistemological context.</p>
+<p>At the <strong>tactical</strong> level, I focused on living kidney donation as a precise therapeutic maneuver to address the burden of end-stage renal disease (ESRD). This is where the intervention meets the disease: a surgical act that transfers a biological resource from one body to another to restore function, prolong life, and reduce dialysis dependence. It is an act of medicine that is simultaneously intimate, invasive, and logistically direct.</p>
+<p>From there, I moved to the <strong>informational</strong> layer: the imperative of <em>truly</em> informed consent (i.e. personalized risk) for the donor candidate. This consent must rise beyond the procedural formalities of risk disclosure and instead embody an ethically robust understanding of the donor’s role—not merely as a volunteer but as a participant in a deeply entangled biological, moral, and social ecosystem. The donor is referred on behalf of the patient; yet they arrive with their own lifeworlds, expectations, fears, and futures. Informed consent in this context cannot be a checkbox—it must be a philosophical commitment to epistemic clarity and emotional resonance.</p>
+<p>Next, at the <strong>strategic</strong> layer, I addressed the challenge of characterizing long-term donor risk—especially relative to the elusive, counterfactual scenario of what would have happened had the donor never donated. This comparative risk framework is not just a statistical exercise; it shapes how we counsel, regulate, and frame the ethics of living donation. Risk is never absolute—it is narrated, estimated, and situated. Thus, our strategic models must be transparent about uncertainty while grounded in rigor.</p>
+<p>I then gestured toward the <strong>operational</strong> demands of long-term donor follow-up. This is the unglamorous but indispensable work of systems maintenance. Tracking donor health for years—decades, ideally—requires infrastructure, coordination, funding, and the sustained commitment of institutions that often shift priorities. Yet without this, we cannot promise the donor that their sacrifice is matched by sustained stewardship.</p>
+<p>Finally, at the <strong>existential</strong> level, I brought the conversation back to the hard outcomes that make this field ethically weighty: perioperative mortality, long-term all-cause mortality, and the potential for ESRD in the donor themselves. These outcomes are rare but real. They are the heavy price that a few may pay so that others may live. To engage with these truths honestly is not to discourage donation, but to dignify it—by refusing euphemism and honoring risk with clear-eyed reverence.</p>
+<hr class="docutils" />
+<p>Great—thank you for laying all of that out clearly. Here’s a <strong>tight, coherent, and advisor-ready summary</strong> that positions your 30-minute doctoral seminar presentation as focused entirely on <strong>challenges</strong>—while still showing off the richness of your framing, the originality of your contributions, and the potential for future infrastructure.</p>
+<hr class="docutils" />
+<p><strong>Doctoral Seminar (April 2): Framing the Challenges of Research in Living Kidney Donation</strong></p>
+<p>My 30-minute presentation focused exclusively on the <em>challenges</em> inherent in designing, executing, and interpreting research on living kidney donors—particularly older adults—and integrating that research into meaningful tools for informed consent and risk communication. I presented five interlocking layers of challenge: <strong>data access, infrastructure, automation, epistemic missingness, and demographic shifts in donor profiles.</strong></p>
+<hr class="docutils" />
+<section id="challenge-of-data-access">
+<h2>1. <strong>Challenge of Data Access</strong><a class="headerlink" href="#challenge-of-data-access" title="Permalink to this heading">#</a></h2>
+<p>The two critical datasets for my work—<strong>SRTR</strong> (for actual donor outcomes) and <strong>NHANES</strong> (for counterfactual healthy non-donor trajectories)—are both federal registries with restricted access. This is not merely a technical hurdle but a political one: recent federal government layoffs have disrupted continuity, delaying data pulls and complicating permissions. I’ve had to share analytic scripts with federal employees to keep backend development of my risk visualization webApp on track.</p>
+<hr class="docutils" />
+</section>
+<section id="challenge-of-integrative-infrastructure">
+<h2>2. <strong>Challenge of Integrative Infrastructure</strong><a class="headerlink" href="#challenge-of-integrative-infrastructure" title="Permalink to this heading">#</a></h2>
+<p>Living kidney donation sits at the intersection of public health, nephrology, surgery, and bioethics—but the infrastructure to unify these domains remains fragmented. The challenge here is <em>not</em> a lack of knowledge per se, but the absence of systems that coherently integrate donor identification, surgical risk stratification, long-term follow-up, and ethical reflection into a single analytic continuum. My thesis lays the conceptual groundwork for this integration, even if the full technical implementation lies outside its immediate scope.</p>
+<hr class="docutils" />
+</section>
+<section id="challenge-of-inefficiency-and-the-need-for-automation">
+<h2>3. <strong>Challenge of Inefficiency and the Need for Automation</strong><a class="headerlink" href="#challenge-of-inefficiency-and-the-need-for-automation" title="Permalink to this heading">#</a></h2>
+<p>Current processes—from risk estimation to consent documentation to postdonation tracking—are labor-intensive, redundant, and institutionally siloed. While automation is not a central thesis deliverable, my project lays a <strong>modular foundation</strong> for future automation: consistent variable definitions, interpretable Cox-based risk outputs, and a patient-facing web-based visualization platform. Efficiency emerges not from cutting corners, but from scaffolding complexity into reproducible pipelines.</p>
+<hr class="docutils" />
+</section>
+<section id="challenge-of-missingness-and-interpretive-gaps">
+<h2>4. <strong>Challenge of Missingness and Interpretive Gaps</strong><a class="headerlink" href="#challenge-of-missingness-and-interpretive-gaps" title="Permalink to this heading">#</a></h2>
+<p>There are two core interpretive challenges here:</p>
+<ul class="simple">
+<li><p><strong>Operational Missingness</strong>: Long-term follow-up of donors is inconsistent. This isn’t just a data problem—it reflects deeper failures in care continuity, institutional memory, and ethical responsibility.</p></li>
+<li><p><strong>Statistical Epistemology</strong>: The precision of our risk estimates varies dramatically with donor age. For example, older donors (e.g., 84 years old) often have <strong>much wider confidence intervals</strong> around mortality and ESRD estimates than donors under 40, even when derived from the same Cox regression framework. This isn’t a flaw—it’s a truth about how sparse data limits inference. But it demands a rethinking of what “informed consent” really means when the information is itself unstable.</p></li>
+</ul>
+<hr class="docutils" />
+</section>
+<section id="challenge-of-demographic-shift-and-clinical-blind-spots">
+<h2>5. <strong>Challenge of Demographic Shift and Clinical Blind Spots</strong><a class="headerlink" href="#challenge-of-demographic-shift-and-clinical-blind-spots" title="Permalink to this heading">#</a></h2>
+<p>The number of adults aged ≥50 undergoing living donor nephrectomy has <strong>quadrupled</strong> in the last two decades. This shift is driven by multiple structural changes—demographic trends, KDIGO guideline updates, and transplant allocation reforms. Yet we know shockingly little about how this group adapts post-nephrectomy. Up to <strong>80% of older donors</strong> meet criteria for CKD post-donation (GFR &lt;60 ml/min/1.73m²), a physiological insult that intersects with frailty, hospitalization risk, and long-term health decline. Despite this, we’ve <strong>never identified clinical signatures of resilience</strong> in this group. My work begins to frame this population not simply as higher-risk but as an unmet opportunity for understanding resilience and vulnerability in aging.</p>
+<hr class="docutils" />
+</section>
+<section id="summary">
+<h2>Summary<a class="headerlink" href="#summary" title="Permalink to this heading">#</a></h2>
+<p>In short, the challenges I presented are not barriers to my thesis—they are its reason for being. By mapping where data is fragmented, where consent falters, and where older donors are medically underserved, my work invites both infrastructure and interpretation. The layered structure of the talk helped emphasize that these challenges are not isolated—they form a continuum from the tactical act of donation to the existential implications of long-term health.</p>
+<hr class="docutils" />
 <style>
 /* Container that floats right with image and caption */
 .float-right {
@@ -559,8 +618,7 @@ document.write(`
 <figure class="align-default" id="figures-cgbest">
 <a class="reference internal image-reference" href="https://www.ledr.com/colours/white.jpg"><img alt="https://www.ledr.com/colours/white.jpg" src="https://www.ledr.com/colours/white.jpg" style="width: 1px; height: 1px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 1 </span><span class="caption-text">An 84-year-old man became one of the oldest living kidney donors in the United States in May 2019. The consent process for donor candidates of advanced age relies on data extrapolated from younger cohorts, typically with a median age of 40 years. As the demographic profile of living kidney donors continues to age, gaps in both present and missing data become increasingly evident. This highlights the need to systematically characterize existing data and address these gaps to better inform consent processes and optimize outcomes. Frailty, which is strongly associated with a significantly increased risk of perioperative complications, 1 remains uncaptured in most existing databases. The absence of this critical metric creates additional challenges, particularly in consenting older individuals considering donation.
-Photo Source: <a class="reference external" href="https://www.houstonmethodist.org/newsroom/an-84-year-old-man-becomes-oldest-living-kidney-donor-in-the-united-states-at-houston-methodist/">Houston Methodist</a></span><a class="headerlink" href="#figures-cgbest" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 1 </span><span class="caption-text">An 84-year-old man became one of the oldest living kidney donors in the United States in May 2019. The consent process for such advanced-age donors often relies on data extrapolated from significantly younger cohorts, typically with a median age of around 40 years. As the living donor population ages, this extrapolative gap exposes both epistemic and clinical blind spots—underscoring the need to better characterize existing datasets and surface where data is missing or underpowered. One such blind spot is <em>frailty</em>, a critical determinant of perioperative risk, yet a variable absent from most donor registries. Its omission complicates both the consent process and postoperative care planning for older candidates. Photo and case source: <a class="reference external" href="https://www.houstonmethodist.org/newsroom/an-84-year-old-man-becomes-oldest-living-kidney-donor-in-the-united-states-at-houston-methodist/">Houston Methodist</a></span><a class="headerlink" href="#figures-cgbest" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </div>
@@ -785,9 +843,17 @@ Hospitalization may be a sentinel event signaling risk for adverse outcomes, inc
 <p>Overall, 1575 (70%) reported any hospitalization a median (interquartile range) of 13 (10-20+) years post-nephrectomy, with surgery/procedure as the most common cause (57%). The cumulative incidence of hospitalization was 47.2% (95%CI: 45.5-48.9) at 20 years post-donation for a 40 year old white female donor with BMI of 25, SBP of 120 mmHg, DBP of 80 mmHg, eGFR of 95 ml/min/1.73 (see App Features above). In a parsimonious model, age at donation (aHR 1.01–1.13–1.27, p=0.04), female sex (aHR 1.07–1.39–1.80, p=0.01), and post-donation diabetes/hypertension (aHR 1.22–1.52–1.88, p&lt;0.01) were associated with hospitalization (see appendix).</p>
 <p>While self-reported, the frequency of hospitalization among LKDs beyond two years post-nephrectomy suggests longer follow-up may be warranted for this population. Furthermore, surveillance and follow-up should be emphasized in populations at higher risk of developing diabetes and hypertension after nephrectomy. The absence of a control population with ascertainment of hospitalization remains a critical limitation of this study.</p>
 <hr class="docutils" />
-<p>This thesis invites exploration of dynamic vs. static presentation of results. Traditional tools summarize average risks, but this app allows exploration of personalized scenarios, offering deeper insights. Users can adjust variables like age, GFR, and comorbidities to visualize personalized risks and uncertainties in real time. This app provides an unprecedented ability to explore personalized risks for donors, facilitating informed decision-making and improving the consent process. The evolving role of technology in medicine is hereby aligned with the importance of open science. The supplemental section of this thesis will address the technical aspects of the app and its potential role in the open science and open source movement.</p>
+<p>Here is the <strong>updated epilogue</strong>, now expanded to include the critical points you raised about <strong>data access bottlenecks</strong>, the role of <strong>automation and APIs</strong>, and the socio-political sensitivity surrounding those shifts. I’ve woven it in naturally, maintaining a thoughtful and diplomatic tone while still being candid about the systemic friction you’re encountering.</p>
 <hr class="docutils" />
-<p>Using data from the Scientific Registry of Transplant Recipients from 1988 to 2020, we estimated perioperative mortality (death within 90 days of donation), 30-year mortality, and risk of ESRD. Death events were captured through the Organ Procurement and Transplantation Network (OPTN) living donor follow-up reported by transplant programs, the National Technical Information Service Limited Access Death Master File, and deaths made available to the OPTN contractor through an interagency data-sharing agreement between the Centers for Medicare &amp; Medicaid Services (CMS) and the Health Resources and Services Administration. These were secondarily verified by the OPTN contractor. Per OPTN policy, all donor deaths within two years of donation must be reported within 72 hours of the hospital becoming aware of the death. ESRD development was ascertained using Centers for Medicare &amp; Medicaid Services data and defined as the initiation of maintenance dialysis, placement on the transplant waiting list, or receipt of a living or deceased donor kidney transplant, whichever occurred first. The healthy nondonor control population was derived from a cohort of 73,000 participants in the third National Health and Nutrition Examination Survey (NHANES). The National Center for Health Statistics performed linkages to the CMS and National Death Index to to ascertain ESRD and death. Both national datasets provided robust comparisons of donor and nondonor risks. Source: <a class="reference external" href="https://donor-webapp.netlify.app/act1/part1">Earlier Presentation</a></p>
+<p>This thesis invites the reader to consider the philosophical and practical shift from <strong>static to dynamic</strong> presentation of clinical risk. Traditional tools tend to summarize population-level averages—offering a narrow window into lived decision-making—but the application developed alongside this work proposes a more flexible, exploratory approach. Rather than rely solely on aggregate risk estimates, users can manipulate key variables—age, baseline GFR, comorbid conditions—to generate personalized, real-time projections of risk. In doing so, the app does not merely inform—it <em>engages</em>. It allows patients, clinicians, and researchers to see how the risk landscape shifts under different assumptions and across different bodies.</p>
+<p>This dynamic interface marks a meaningful evolution in the ethics and pragmatics of <strong>informed consent</strong>. By visualizing the uncertainty that surrounds long-term donor outcomes—especially for older adults or those outside conventional risk bins—the platform offers a more transparent depiction of what we know, what we don’t, and how confidence intervals behave in edge-case scenarios. These elements are often lost in the language of “standard of care,” yet they are essential to the dignity of the donor. In this sense, the tool is not just technological—it is ethical. It dignifies variability, contextualizes uncertainty, and respects autonomy by rooting consent in deeper epistemic clarity.</p>
+<p>Crucially, the development of this platform aligns with broader movements in <strong>open science</strong> and <strong>computational transparency</strong>. The backend of the application leverages robust national datasets and reproducible statistical code, and the thesis’s supplemental section details how the architecture—built on openly available packages and hosted with free-tier cloud tools—can be adapted, forked, or scaled. By contributing to the open-source ecosystem, this work asserts that clinical tools should not be locked behind paywalls or proprietary codebases. Instead, it embraces a model of translational research where methods, risks, and tools are legible to all stakeholders—from patients to policymakers.</p>
+<p>One of the more sobering realities during the course of this project has been the <strong>fragility of access to federal registries</strong>, particularly the Scientific Registry of Transplant Recipients (SRTR) and NHANES. While these datasets underpin the statistical integrity of the project, recent <strong>federal layoffs and staffing shortages</strong> have disrupted communication pipelines and delayed data approvals. At several points, progress depended on personally sharing analytic scripts with federal employees to manually generate outputs for app updates. This workaround, while functional, is neither scalable nor sustainable.</p>
+<p>The long-term vision anticipates replacing such fragile arrangements with <strong>secure API access</strong>, which would enable continuous updates to the web application as new data becomes available—similar to how software updates now occur seamlessly for computers and mobile devices. This transition to automated interoperability will reduce human bottlenecks and increase transparency, but it is not without <strong>political and institutional sensitivity</strong>. The same shifts that promise efficiency also imply displacement. The reality is that some of the very delays I’ve experienced—particularly in responding to thesis committee feedback—are downstream of job losses among federal collaborators. This project thus resides in a tense but necessary space: advocating for open systems and automation while also recognizing the emotional and structural upheaval such changes produce.</p>
+<p>From a data perspective, this thesis draws on more than three decades of longitudinal outcomes from the <strong>SRTR</strong> and contrasts those with counterfactual trajectories derived from <strong>NHANES</strong>. Perioperative mortality, 30-year mortality, and ESRD risk estimates were built using verified death and dialysis data obtained via interagency partnerships between OPTN, CMS, and the National Death Index. Donor mortality was stringently verified, including required reporting within 72 hours for deaths occurring within two years postdonation. ESRD endpoints were defined with clinical precision: dialysis initiation, waitlisting, or transplant receipt—whichever came first.</p>
+<p>The counterfactual control cohort—comprising 73,000 NHANES participants—was selected to mirror the clinical baseline of healthy nondonors. These data were carefully linked to federal death and dialysis registries to ensure robust longitudinal comparisons. In this way, the app does more than offer visualizations: it embodies a scientifically grounded, methodologically transparent rethinking of how comparative risk can—and should—be communicated.</p>
+<p>Ultimately, this project underscores that technology in medicine should do more than <em>predict</em>—it should <strong>illuminate</strong>. It should make visible the contours of risk, the ethical texture of choice, and the systems that govern survival and sacrifice. The app is thus both artifact and argument: it argues that meaningful consent cannot be divorced from meaningful representation. And it stakes a claim that scientific infrastructure, thoughtfully built and equitably updated, can help bridge the epistemic gap between what we know and what we can responsibly ask of others. Source: <a class="reference external" href="https://donor-webapp.netlify.app/act1/part1">Earlier Presentation</a></p>
+</section>
 <div class="toctree-wrapper compound">
 </div>
 </section>
@@ -837,6 +903,26 @@ Hospitalization may be a sentinel event signaling risk for adverse outcomes, inc
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#challenge-of-data-access">1. <strong>Challenge of Data Access</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#challenge-of-integrative-infrastructure">2. <strong>Challenge of Integrative Infrastructure</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#challenge-of-inefficiency-and-the-need-for-automation">3. <strong>Challenge of Inefficiency and the Need for Automation</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#challenge-of-missingness-and-interpretive-gaps">4. <strong>Challenge of Missingness and Interpretive Gaps</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#challenge-of-demographic-shift-and-clinical-blind-spots">5. <strong>Challenge of Demographic Shift and Clinical Blind Spots</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#summary">Summary</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
