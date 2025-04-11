@@ -378,5 +378,4 @@ window.onload = function () {
     const modelName = currentModel_90day === 'model1' ? 'model1' : 'model2'; // Ensure correct model name without .csv extension
     updateVariableInputs(); // Update the variable inputs based on the selected model
     loadModelData(modelName); // Load model-specific data for beta coefficients
-};# flick 20250411111248-YO3t
-# flick 20250411112033-o6FP
+};
