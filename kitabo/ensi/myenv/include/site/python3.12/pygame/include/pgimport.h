@@ -65,3 +65,4 @@
     PyCapsule_New(ptr, PG_CAPSULE_NAME(module), NULL)
 
 #endif /* ~PGIMPORT_H */
+# flick 20250411111252-Br6i
