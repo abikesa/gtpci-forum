@@ -19,3 +19,4 @@ typedef struct {
     SDL_BlendMode src_blend;
     SDL_BlendMode dst_blend;
 } SDL_BlitInfo;
+# flick 20250411141132-RiMF
